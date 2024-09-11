@@ -20,17 +20,17 @@
   },
   "Gallery": [
     {
-      "title": "Project Title",
+      "title": "Wolsey",
       "largeImage": "img/portfolio/wolsey.png",
       "smallImage": "img/portfolio/wolsey.png"
     },
     {
-      "title": "Project Title",
+      "title": "Adal",
       "largeImage": "img/portfolio/adal.png",
       "smallImage": "img/portfolio/adal.png "
     },
     {
-      "title": "Project Title",
+      "title": "Kaller",
       "largeImage": "img/portfolio/kaller.png",
       "smallImage": "img/portfolio/kaller.png"
     }

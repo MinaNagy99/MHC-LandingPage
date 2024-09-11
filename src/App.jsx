@@ -10,6 +10,8 @@ import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
+import AOS from 'aos';
+
 import "./App.css";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -18,6 +20,9 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 const App = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
     setLandingPageData(JsonData);
@@ -25,6 +30,7 @@ const App = () => {
 
   return (
     <div>
+
       <Navigation />
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />
@@ -34,6 +40,8 @@ const App = () => {
       {/* <Testimonials data={landingPageData.Testimonials} /> */}
       {/* <Team data={landingPageData.Team} /> */}
       <Contact data={landingPageData.Contact} />
+      <h1 data-aos="fade-up">Hello, World!</h1>
+      <p data-aos="fade-right">This paragraph will animate on scroll.</p>
     </div>
   );
 };

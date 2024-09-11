@@ -712,14 +712,14 @@ label {
 .numbers {
   background-color: #5ca9fb;
   color: black;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 30px;
+  font-weight: 500;
   border-radius: 50% 50%;
 }
 
@@ -742,4 +742,41 @@ label {
     max-width: 100px;
     /* Smaller size on smaller screens */
   }
+}
+
+.circle {
+  border-radius: 50%;
+  /* Circle shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  /* Circle animation */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  /* Prevent overflow during animation */
+}
+
+/* Number inside the circle */
+.circle p {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  /* Number animation */
+}
+
+/* Circle hover animation */
+.circle:hover {
+  transform: scale(1.2);
+  /* Scale the circle */
+}
+
+/* Number hover animation (fades and moves up) */
+.circle:hover p {
+  opacity: 0.7;
+  /* Make the number semi-transparent */
+  transform: translateY(-10px);
+  /* Move the number slightly up */
 }
