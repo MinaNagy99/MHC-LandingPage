@@ -51,14 +51,14 @@ p.intro {
 }
 
 a {
-  color: #608dfd;
+  color: #C5A363;
   font-weight: 400;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #608dfd;
+  color: #C5A363;
 }
 
 ul,
@@ -145,7 +145,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+  background: #C5A363 !important;
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -157,11 +157,11 @@ hr {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #fff;
-  border-color: #608dfd;
+  border-color: #C5A363;
 }
 
 .navbar-default .navbar-toggle:hover>.icon-bar {
-  background-color: #608dfd;
+  background-color: #C5A363;
 }
 
 .section-title {
