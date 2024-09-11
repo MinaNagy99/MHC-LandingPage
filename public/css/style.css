@@ -1,6 +1,6 @@
 body,
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Georgia", sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: #777;
@@ -121,7 +121,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #C5A363 0%, #C5A363 100%);
   content: "";
   transition: width 0.2s;
 }
@@ -178,7 +178,7 @@ hr {
 .section-title h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: #C5A363;
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -194,7 +194,7 @@ hr {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  background-color: #5ca9fb;
+  background-color: #C5A363;
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -240,8 +240,6 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
-  background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -249,6 +247,10 @@ a:focus,
 }
 
 .intro .overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.intro .overlay2 {
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -322,7 +324,7 @@ header .intro-text {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: #C5A363;
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -339,7 +341,7 @@ header .intro-text {
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #5ca9fb;
+  color: #C5A363;
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
@@ -430,9 +432,7 @@ header .intro-text {
   text-align: center;
   margin: 0 auto;
   color: #fff;
-  background: linear-gradient(to right,
-      rgba(99, 114, 255, 0.8) 0%,
-      rgba(92, 169, 251, 0.8) 100%);
+  background: #C5A363;
   padding: 30% 0 0;
   height: 100%;
   width: 100%;
@@ -537,7 +537,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: #C5A363;
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -710,7 +710,7 @@ label {
 }
 
 .numbers {
-  background-color: #5ca9fb;
+  background-color: #C5A363;
   color: black;
   width: 80px;
   height: 80px;
@@ -779,4 +779,33 @@ label {
   /* Make the number semi-transparent */
   transform: translateY(-10px);
   /* Move the number slightly up */
+}
+
+#header .overlay {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  /* Full viewport height */
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  /* Ensure the video covers the entire area */
+}
+
+#header .container {
+  position: relative;
+  z-index: 1;
+  /* Ensure the content appears on top of the video */
+  color: white;
 }

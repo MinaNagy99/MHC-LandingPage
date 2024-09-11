@@ -5,6 +5,13 @@ export const Header = (props) => {
     <header id="header">
       <div className="intro">
         <div className="overlay">
+          {/* Video Background */}
+
+          <video autoPlay muted loop id="background-video">
+            <source src="/img/vedio.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-2 intro-text">
@@ -24,6 +31,8 @@ export const Header = (props) => {
           </div>
         </div>
       </div>
+
     </header>
+
   );
 };

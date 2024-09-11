@@ -40,8 +40,6 @@ const App = () => {
       {/* <Testimonials data={landingPageData.Testimonials} /> */}
       {/* <Team data={landingPageData.Team} /> */}
       <Contact data={landingPageData.Contact} />
-      <h1 data-aos="fade-up">Hello, World!</h1>
-      <p data-aos="fade-right">This paragraph will animate on scroll.</p>
     </div>
   );
 };
