@@ -14,12 +14,11 @@ export const Header = (props) => {
 
           <div className="container">
             <div className="row">
-              <div className="col-md-8 col-md-offset-2 intro-text">
-                <h1>
-                  {props.data ? props.data.title : "Loading"}
-                  <span></span>
-                </h1>
-                <p>{props.data ? props.data.paragraph : "Loading"}</p>
+              <div className="col-md-8 cover-main  col-md-offset-2 intro-text">
+                <div className="cover-main">
+
+                  <img className="mainImg" src="/img/main.png" alt="" />
+                </div>
                 <a
                   href="#contact"
                   className="btn btn-custom btn-lg page-scroll"

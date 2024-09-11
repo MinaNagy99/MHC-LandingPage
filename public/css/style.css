@@ -165,7 +165,21 @@ hr {
 }
 
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 10px;
+}
+
+.mainImg {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.cover-main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .section-title h2 {
@@ -290,6 +304,7 @@ header .intro-text {
 /* Features Section */
 #features {
   background: #f6f6f6;
+  padding: 20px 10px;
 }
 
 #features i.fa {
