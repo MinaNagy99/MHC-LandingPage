@@ -9,7 +9,7 @@ const initialState = {
 };
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
-
+  const recipient = "info@company.com"
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
@@ -19,22 +19,12 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    console.log(name, email, message);
-
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
     {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
+    const mailtoLink = `mailto:${recipient}?subject="message from website"&body=${body}`;
 
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    // Redirect to the mailto link
+    window.location.href = mailtoLink;
   };
   return (
     <div>
@@ -93,7 +83,7 @@ export const Contact = (props) => {
                   <p className="help-block text-danger"></p>
                 </div>
                 <div id="success"></div>
-                <button  type="submit" className="btn btn-custom btn-lg">
+                <button type="submit" className="btn btn-custom btn-lg">
                   Send Message
                 </button>
               </form>
