@@ -138,19 +138,14 @@
     },
     {
       "icon": "fa fa-bullhorn",
-      "number": "7",
+      "number": "4",
       "title": "Total acquisitions",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     },
-    {
-      "icon": "fa fa-group",
-      "number": "200",
-      "title": "assets under management",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
+  
     {
       "icon": "fa fa-magic",
-      "number": "550",
+      "number": "200",
       "title": "people",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     }
