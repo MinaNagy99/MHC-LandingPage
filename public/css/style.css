@@ -433,21 +433,34 @@ header .intro-text {
 
 .portfolio-item {
   margin: 1px -15px 0 -14px;
-  padding: 0;
+  padding: 10px;
 }
 
 .portfolio-item .hover-bg {
   overflow: hidden;
   position: relative;
   margin: 0;
+
 }
+
+.inner-portfolio-item {
+  background-color: #f6f6f6;
+  padding: 40px;
+}
+
+.companyName {
+  color: #C5A363;
+  font-weight: 900;
+  font-size: x-large;
+}
+
+
 
 .hover-bg .hover-text {
   position: absolute;
   text-align: center;
   margin: 0 auto;
-  color: #fff;
-  background: #C5A363;
+  color: #fff !important  ;
   padding: 30% 0 0;
   height: 100%;
   width: 100%;

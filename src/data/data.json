@@ -20,17 +20,17 @@
   },
   "Gallery": [
     {
-      "title": "Wolsey",
-      "largeImage": "img/portfolio/wolsey.png",
-      "smallImage": "img/portfolio/wolsey.png"
-    },
-    {
-      "title": "Adal",
+      "title": "ADAL",
       "largeImage": "img/portfolio/adal.png",
       "smallImage": "img/portfolio/adal.png "
     },
     {
-      "title": "Kaller",
+      "title": "WOLSEY",
+      "largeImage": "img/portfolio/wolsey.png",
+      "smallImage": "img/portfolio/wolsey.png"
+    },
+    {
+      "title": "KALLER",
       "largeImage": "img/portfolio/kaller.png",
       "smallImage": "img/portfolio/kaller.png"
     }
@@ -142,7 +142,6 @@
       "title": "Total acquisitions",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     },
-  
     {
       "icon": "fa fa-magic",
       "number": "200",
